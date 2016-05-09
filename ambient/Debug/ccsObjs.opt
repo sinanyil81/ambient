@@ -1,0 +1,1 @@
+"./main.obj" "./app/app.obj" "./mac/radio.obj" "./mac/receive.obj" "./mac/transmit.obj" "./mcu/delay.obj" "./mcu/mcu.obj" "../lnk_msp430fr5969.cmd" -llibmpu_init.a -llibmath.a -llibc.a 
