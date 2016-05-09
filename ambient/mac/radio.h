@@ -18,14 +18,17 @@
 #define TX_OUT P2OUT
 #define TX_DIR P2DIR
 
-#define RX_PIN BIT2
-#define RX_IN P2IN
-#define RX_DIR P2DIR
-#define RX_IES P2IES
-#define RX_IFG  P2IFG
-#define RX_IE P2IE
+// RX= P1.1 for debug purposes
+#define RX_PIN BIT1
+#define RX_OUT P1OUT
+#define RX_REN P1REN
+#define RX_IN P1IN
+#define RX_DIR P1DIR
+#define RX_IES P1IES
+#define RX_IFG  P1IFG
+#define RX_IE P1IE
 
-#define RX_VECTOR PORT2_VECTOR
+#define RX_VECTOR PORT1_VECTOR
 
 
 /* Initialize the communication hardware */

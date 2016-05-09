@@ -1,7 +1,7 @@
 #include "mac.h"
 
 #pragma vector=RX_VECTOR
-__interrupt void INT_Port1(void) {
+__interrupt void INT_PortRX(void) {
 	switch(RX_IFG&RX_PIN)
 	{
 		case RX_PIN:
@@ -9,6 +9,7 @@ __interrupt void INT_Port1(void) {
 			// toggle rising to falling edge to detect transitions
 			// wake-up()
 			// receive bits...
+			led_toggle(LED2);
 			return;
 
 		default:
