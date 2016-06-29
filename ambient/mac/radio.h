@@ -14,9 +14,13 @@
  * P2.7 for TX
  * P2.3 for RX
  ---------------------------------------------------*/
-#define TX_PIN BIT7
-#define TX_OUT P2OUT
-#define TX_DIR P2DIR
+//#define TX_PIN BIT7
+//#define TX_OUT P2OUT
+//#define TX_DIR P2DIR
+
+#define TX_PIN BIT0
+#define TX_OUT P4OUT
+#define TX_DIR P4DIR
 
 // RX= P1.1 for debug purposes
 #define RX_PIN BIT1
