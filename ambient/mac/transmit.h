@@ -11,8 +11,8 @@
 /*---------------------------------------------------
  * 1-0 Modulation utilities
  ---------------------------------------------------*/
-#define tx_on() TX_OUT &= ~TX_PIN;
-#define tx_off() TX_OUT |= TX_PIN;
+#define tx_off() TX_OUT &= ~TX_PIN;
+#define tx_on() TX_OUT |= TX_PIN;
 #define tx_toggle() TX_OUT ^= TX_PIN;
 
 /* Transmits given data using FM0 encoding scheme. */

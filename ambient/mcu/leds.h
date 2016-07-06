@@ -13,7 +13,8 @@
  * evaluation board
  ---------------------------------------------------*/
 #define LED2 BIT0
-#define LED1 BIT6
+//#define LED1 BIT6
+#define LED1 BIT0
 #define LED2_OUT P1OUT
 #define LED2_DIR P1DIR
 #define LED1_OUT P4OUT
